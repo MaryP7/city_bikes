@@ -1,4 +1,5 @@
 # city_bikes
+<<<<<<< HEAD
 For the purpose of this project, I have analyzed the use of Citi Bike in 2022 from multiple aspects, including but not limited to:
 
 What are the total trips monthly throughout the year of 2022?
@@ -29,3 +30,6 @@ maps
 tmaptools
 ggmap
 rmap
+=======
+
+>>>>>>> 46e42c24406b5c3eb2c4aa9fe610f747bb24131b
