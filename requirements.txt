@@ -1,3 +1,4 @@
 keplergl
 plotly
 matplotlib
+streamlit_keplergl
