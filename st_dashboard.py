@@ -88,4 +88,4 @@ elif page == "Recommendations":
     st.title("Future recomendations")
     st.markdown("The dashboard will help with the expansion problems Divvy currently faces")
     st.markdown("Central Park weather data comes from the National Climatic Data Center")
-    st.markdown("Exploring NYC Bike Share Data by Clif Kranish(Jan 25, 2021"))
+    st.markdown("Exploring NYC Bike Share Data by Clif Kranish(Jan 25, 2021")
