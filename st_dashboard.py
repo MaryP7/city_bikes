@@ -60,12 +60,13 @@ elif page == "Most popular stations":
 elif page == "Map":
 
     path_to_html = "Divvy Bike Trips Aggregated.html" 
-
     with open(path_to_html,'r') as f: 
         html_data = f.read()
-
     st.header("Aggregated Bike Trips in New York")
     st.components.v1.html(html_data,height=1000)
+    
+    
+    st.markdown("central park does not have that many bike rides compared to the rest of New York. Cental park is a very crowded area so probably hard to get through on a bike, that being the reason there are less rides that take place there.")
     
     
     
@@ -86,3 +87,4 @@ elif page == "Intro page":
 elif page == "Recommendations":
     st.title("Future recomendations")
     st.markdown("The dashboard will help with the expansion problems Divvy currently faces")
+    st.markdown("Exploring NYC Bike Share Data by Clif Kranish(Jan 25, 2021)"
