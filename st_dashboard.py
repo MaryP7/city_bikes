@@ -22,7 +22,7 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
 
 if page == "Weather component and bike usage":
 
-    df = pd.read_csv('data/data_subset.csv', index_col = 0)
+    df = pd.read_csv('data_subset.csv', index_col = 0)
 
     fig_2 = make_subplots(specs = [[{"secondary_y": True}]])
 
@@ -45,7 +45,7 @@ if page == "Weather component and bike usage":
 
 elif page == "Most popular stations":
 
-    top20 = pd.read_csv('data/top20.csv', index_col = 0)
+    top20 = pd.read_csv('top20.csv', index_col = 0)
 
 
     fig = go.Figure(go.Bar(x = top20.index, y = top20['value'], marker={'color': top20['value'],'colorscale': 'Blues'}))
