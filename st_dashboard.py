@@ -21,7 +21,7 @@ page = st.sidebar.selectbox('Select an aspect of the analysis',
      "Map", "Recommendations"])
 
 if page == "Weather component and bike usage":
-
+    st.markdown("This page shows how the weather verys through out the year")
     df = pd.read_csv('data_subset.csv', index_col = 0)
 
     fig_2 = make_subplots(specs = [[{"secondary_y": True}]])
@@ -44,6 +44,7 @@ if page == "Weather component and bike usage":
     st.plotly_chart(fig_2, use_container_width=True)
 
 elif page == "Most popular stations":
+    st.markdown("In the page, I leveraged the Matplotlib library to create a line graph that visually represents changes in data over time.")
 
     top20 = pd.read_csv('top20.csv', index_col = 0)
 
@@ -87,5 +88,6 @@ elif page == "Intro page":
 elif page == "Recommendations":
     st.title("Future recomendations")
     st.markdown("The dashboard will help with the expansion problems Divvy currently faces")
-    st.markdown("Central Park weather data comes from the National Climatic Data Center")
-    st.markdown("Exploring NYC Bike Share Data by Clif Kranish(Jan 25, 2021")
+    st.markdown("Add more stations along the water")
+    st.markdown("Make sure there are enough bikes at each station")
+    
